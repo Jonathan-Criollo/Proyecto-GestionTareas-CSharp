@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="GestionTareas.Core/GestionTareas.Core.csproj" Id="b09eaf98-40a1-4c69-8892-0f3826972609" />
+  <Project Path="GestionTareas.UI/GestionTareas.UI.csproj" Id="9a1b8090-ae28-42cf-b54b-f992a97d6e93" />
+</Solution>
