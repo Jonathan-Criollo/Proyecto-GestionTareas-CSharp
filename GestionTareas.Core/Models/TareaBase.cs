@@ -22,4 +22,14 @@ public abstract class TareaBase : ITarea
     }
 
     public abstract string ObtenerDetalle();
+
+    /// <summary>
+    /// Restaura la identidad original de una tarea leída desde almacenamiento.
+    /// Es interno para que solo la capa de persistencia pueda usarlo.
+    /// </summary>
+    internal void RestaurarIdentidad(Guid id, DateTime fechaCreacion)
+    {
+        Id = id;
+        FechaCreacion = fechaCreacion;
+    }
 }
