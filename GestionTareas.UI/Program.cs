@@ -1,3 +1,6 @@
+using GestionTareas.Core.Services;
+using GestionTareas.Core.Storage;
+
 namespace GestionTareas.UI
 {
     internal static class Program
@@ -8,10 +11,12 @@ namespace GestionTareas.UI
         [STAThread]
         static void Main()
         {
-            
+
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+
+            var gestor = new GestorDeTareas(new RepositorioJson());
+            Application.Run(new FormPrincipal(gestor));
         }
     }
 }
