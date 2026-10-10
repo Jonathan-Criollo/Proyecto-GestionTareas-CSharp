@@ -324,9 +324,10 @@ public sealed class FormPrincipal : Form
             }
         }
 
+        var sustantivo = _gestor.Total == 1 ? "tarea" : "tareas";
         _lblResumen.Text = tareas.Count == _gestor.Total
-            ? $"{_gestor.Total} tareas"
-            : $"{tareas.Count} de {_gestor.Total} tareas";
+            ? $"{_gestor.Total} {sustantivo}"
+            : $"{tareas.Count} de {_gestor.Total} {sustantivo}";
 
         ActualizarBotones();
     }
