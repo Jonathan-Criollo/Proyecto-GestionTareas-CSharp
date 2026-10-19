@@ -203,4 +203,4 @@ como parte del cierre del proyecto.
 - `dotnet build SistemaGestionTareas.slnx` → compilación correcta, 0 advertencias, 0 errores.
 - La aplicación inicia correctamente y queda a la espera de interacción del usuario.
 
-Una matriz de pruebas funcionales más detallada está en proceso de elaboración en `doc/`.
+La matriz de pruebas funcionales completa está en [`doc/MATRIZ_PRUEBAS.md`](doc/MATRIZ_PRUEBAS.md).
